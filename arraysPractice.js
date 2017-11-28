@@ -93,7 +93,23 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 
   //Code Here
-
+function divider(numbersArray){
+  var evens = [];
+  var odds = [];
+  var numbsArr = [];
+  for(var i = 0; i<numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0){
+      evens.push(numbersArray[i]);
+    /*}else if(numbersArray[i] % 2 !== 0){
+      odds.push(numbersArray[i]);*/
+    }else{
+      odds.push(numbersArray[i])
+    }
+    
+  }
+  numbsArr.push(evens,odds);
+  return numbsArr;
+}
 
 //Next Problem
 
@@ -108,7 +124,15 @@ var getRandomArbitrary = function() {
 
   //Code Here
 
-
+function finder(randNum){
+  for(var i=0; i<randNum.length; i++){
+   if(randNum[i].indexOf(randNum) === -1){
+     return false;
+   }else {
+     return true;
+   }
+  }
+}
 
 
 //Next Problem
@@ -131,6 +155,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
   //Code Here
+  function removeItem(myGroceryList, item){
+   for(var i=0;i<myGroceryList.length;i++){
+     if(myGroceryList[i] === item){
+       myGroceryList[i].splice(i,1);
+       return myGroceryList;
+     }
+   }
+  }
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
@@ -144,7 +176,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
-
+function maker(){
+  var arr =[];
+  for(var i=1; i <= 215;i++){
+   arr.push(i);
+  }
+  return arr;
+}
 
 
 //Next Problem
@@ -155,7 +193,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
+function addTen(numbers){
+  var numberArray = Number(numbers);
+  for(i=0;i < numbers.length;i++){
+   
+  }
 
+}
 
 
 //Next Problem
